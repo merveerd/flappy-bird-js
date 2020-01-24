@@ -1,0 +1,101 @@
+.obstacle {
+    width: 50px;
+    background-color: aquamarine;
+    position: absolute;
+    transition: left;
+}
+
+#bird {
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 300px;
+    border-radius: 33%;
+    z-index: 1;
+}
+
+.bird-eyes {
+    top: 10px;
+    background-color: white;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: 5px;
+    border-radius: 25%;
+    }
+
+.bird-eyes.right {
+  left:25px;  
+}
+
+.mouth {
+    position: absolute;
+    background-color: red;
+    width: 10px;
+    height: 5px;
+    left: 15px;
+    top:30px;
+}
+
+#bird:hover {
+    cursor: pointer;
+}
+
+#container {
+    width: 800px;
+    height: 600px;
+    border: chocolate solid;
+    left: 300px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.game-over {
+    width: 130px;
+    height: 30px;
+    background-color: blue;
+    display: none;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+}
+.score-table {
+    margin-left: 300px;
+    width: 100px;
+    height: 30px;
+    background-color:blue;
+    color: white;
+    font-weight: bold;
+}
+
+.food {
+
+    background-color: pink;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+.animation-on {
+    animation: bigger-version 1s ease-out forwards;
+    }
+    @keyframes bigger-version {
+    0% {background-color: red;
+        transform: scale(1);
+    }
+    
+    50% {background-color: rgb(222, 228, 174);
+        transform: scale(1.5);
+    }
+    
+    100% {background-color: red;
+        transform: scale(1);
+    }
+    
+    }
+    
